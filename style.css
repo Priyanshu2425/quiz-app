@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Handjet', cursive;
+}
+
+body{
+    background-color: #F1F0F8;
+}
+
+#card{
+    width: 400px;
+    height: 400px;
+    margin: 10% auto;
+    background-color: white;
+    border-radius: 2%;
+    box-shadow: 0px 0px 5px 5px #E2E5EF;
+}
+
+#question{
+    height: 75%;
+    background-color: white;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    text-align: center;
+}
+
+#question p{
+    padding: 10% 0 0 0;
+    margin: 0 0 7% 0;
+    font-size: 24px;
+}
+
+#question input{
+    margin: 4% 4%;
+    cursor: pointer;
+}
+
+
+
+#question form{
+    font-size: 24px;
+}
+
+#button{
+    height: 25%;
+    background-color: #4272F5;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    text-align: center;
+    
+}
+
+#button:hover{
+    cursor: pointer;
+}
+#button p{
+    padding: 8% 0 0 0;
+    color: white;
+    font-size: 24px;
+}
+@media only screen and (max-width: 500px) {
+    #card{
+        width: 90vw;
+    }
+  }
