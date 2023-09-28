@@ -57,6 +57,11 @@ function goToNextQuestion(){
     
 }
 
+
+function reloadPage(){
+    location.reload();
+}
+
 function displayScore(){
     var questionDiv = document.getElementById("question");
 
@@ -65,18 +70,15 @@ function displayScore(){
     `;
 
     var buttonDiv = document.getElementById("button");
+    console.log(buttonDiv);
+
     buttonDiv.innerHTML = `
-    <p> Try Again </p>
+    <p onclick = "reloadPage()"> Try Again </p>
     `;
-    console.log("i am here");
-    buttonDiv.onclick = reloadPage;
     console.log(buttonDiv.onclick);
 }
 
-function reloadPage(){
-    console.log("reloading");
-    location.reload();
-}
+
 
 function updateScore(){
     var op = document.getElementsByTagName("input");
